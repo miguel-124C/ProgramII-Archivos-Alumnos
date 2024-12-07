@@ -222,7 +222,7 @@ object Form2: TForm2
     end
   end
   object PListado: TPanel
-    Left = 327
+    Left = 328
     Top = 8
     Width = 458
     Height = 379
@@ -309,16 +309,7 @@ object Form2: TForm2
       Caption = 'Finalizar Navegacion'
       Enabled = False
       TabOrder = 0
-      OnClick = onEndNavegacion
-    end
-    object BtnNavegar: TButton
-      Left = 16
-      Top = 19
-      Width = 105
-      Height = 25
-      Caption = 'Iniciar Navegacion'
-      TabOrder = 1
-      OnClick = BtnNavegarClick
+      OnClick = OnEndNavegacion
     end
     object BtnNextRegistro: TButton
       Left = 367
@@ -327,8 +318,8 @@ object Form2: TForm2
       Height = 25
       Caption = '>>'
       Enabled = False
-      TabOrder = 2
-      OnClick = onNextRegistro
+      TabOrder = 1
+      OnClick = OnNextRegistro
     end
     object BtnPrevRegistro: TButton
       Left = 16
@@ -337,8 +328,8 @@ object Form2: TForm2
       Height = 25
       Caption = '<<'
       Enabled = False
-      TabOrder = 3
-      OnClick = BtnPrevRegistroClick
+      TabOrder = 2
+      OnClick = OnPreviosRegistro
     end
     object Button3: TButton
       Left = 16
@@ -352,7 +343,7 @@ object Form2: TForm2
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 4
+      TabOrder = 3
       OnClick = OnEditarRegistro
     end
     object Button1: TButton
@@ -367,8 +358,17 @@ object Form2: TForm2
       Font.Name = 'Tahoma'
       Font.Style = [fsBold]
       ParentFont = False
-      TabOrder = 5
+      TabOrder = 4
       OnClick = OnEliminarRegistro
+    end
+    object ComBoNavegacion: TComboBox
+      Left = 16
+      Top = 19
+      Width = 145
+      Height = 21
+      TabOrder = 5
+      Text = 'Navegar Por?'
+      OnChange = OnChangeNavegacion
     end
   end
   object MainMenu1: TMainMenu
@@ -382,6 +382,7 @@ object Form2: TForm2
       end
       object pornombre1: TMenuItem
         Caption = 'por nombre'
+        OnClick = CrearIndicePorNombreClick
       end
     end
     object Ordenar1: TMenuItem
@@ -392,6 +393,7 @@ object Form2: TForm2
       end
       object Pornombre2: TMenuItem
         Caption = 'Por nombre'
+        OnClick = OrdenarPorNombreClick
       end
     end
   end
