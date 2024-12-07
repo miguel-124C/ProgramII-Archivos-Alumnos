@@ -13,6 +13,7 @@
 *.tvsconfig
 
 # Archivos temporales y de configuración del entorno
+Win32
 __history/
 __recovery/
 *.~* 
