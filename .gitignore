@@ -1,0 +1,48 @@
+# Archivos generados automáticamente por RAD Studio
+*.dcu
+*.obj
+*.exe
+*.dll
+*.tds
+*.il?
+*.csm
+*.dsk
+*.local
+*.identcache
+*.stat
+*.tvsconfig
+
+# Archivos temporales y de configuración del entorno
+__history/
+__recovery/
+*.~* 
+*.bak
+*.tmp
+*.bpl
+
+# Archivos específicos del proyecto
+*.cfg
+*.cbproj
+*.cbproj.local
+*.groupproj
+*.tlib
+*.tlog
+*.map
+
+# Configuración del depurador y cache
+*.dproj.local
+*.dproj.# (reemplaza '#' con cualquier número que genere el entorno)
+*.obj
+*.idb
+*.pch
+*.ipch
+*.aps
+
+# Archivos específicos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuración de usuario de RAD Studio
+*.cproj.local
+*.layout
